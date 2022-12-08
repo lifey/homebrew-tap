@@ -9,7 +9,7 @@ class Mjprof < Formula
     url "https://github.com/AdoptOpenJDK/mjprof/releases/download/v1.1.0/mjprof-1.1.0-linux-x86_64.zip"
     sha256 "3ba5894bf4cc4f346f32d371b41cd9d98936db996240acc16f44021de7fc511e"
   end
-  if OS.mac? && Hardware::CPU.intel?
+  if OS.mac? && Hardware::CPU.arm64?
     url "https://github.com/AdoptOpenJDK/mjprof/releases/download/v1.1.0/mjprof-1.1.0-osx-x86_64.zip"
     sha256 "3d526873b566f0837df886a14e3f2f4a25bf2459102e65530b85fce74b4636f7"
   end
