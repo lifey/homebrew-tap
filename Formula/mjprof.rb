@@ -13,6 +13,10 @@ class Mjprof < Formula
     url "https://github.com/AdoptOpenJDK/mjprof/releases/download/v1.1.0/mjprof-1.1.0-osx-x86_64.zip"
     sha256 "3d526873b566f0837df886a14e3f2f4a25bf2459102e65530b85fce74b4636f7"
   end
+    if OS.mac? && Hardware::CPU.intel?
+    url "https://github.com/AdoptOpenJDK/mjprof/releases/download/v1.1.0/mjprof-1.1.0-osx-x86_64.zip"
+    sha256 "3d526873b566f0837df886a14e3f2f4a25bf2459102e65530b85fce74b4636f7"
+  end
 
 
   def install
