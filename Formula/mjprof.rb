@@ -1,4 +1,4 @@
-# Generated with JReleaser 1.3.1 at 2022-12-07T20:18:44.973643853Z
+# Generated with JReleaser 1.3.1 at 2022-12-08T20:54:26.491190306Z
 class Mjprof < Formula
   desc "mjprof is a command line monadic java profiler"
   homepage "https://github.com/AdoptOpenJDK/mjprof"
@@ -7,15 +7,11 @@ class Mjprof < Formula
 
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/AdoptOpenJDK/mjprof/releases/download/v1.1.0/mjprof-1.1.0-linux-x86_64.zip"
-    sha256 "3ba5894bf4cc4f346f32d371b41cd9d98936db996240acc16f44021de7fc511e"
-  end
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/AdoptOpenJDK/mjprof/releases/download/v1.1.0/mjprof-1.1.0-osx-x86_64.zip"
-    sha256 "3d526873b566f0837df886a14e3f2f4a25bf2459102e65530b85fce74b4636f7"
+    sha256 "67b3292390c340b57d4950b913e642a6cd5aec82360325f3ea5c7133efed2867"
   end
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/AdoptOpenJDK/mjprof/releases/download/v1.1.0/mjprof-1.1.0-osx-x86_64.zip"
-    sha256 "3d526873b566f0837df886a14e3f2f4a25bf2459102e65530b85fce74b4636f7"
+    sha256 "3aaa7036e4729801f3f835f3ab960957dc0cd25b30da7c975f761797244db4bc"
   end
 
 
